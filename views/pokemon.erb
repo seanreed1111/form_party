@@ -1,0 +1,69 @@
+<h1>Pokemon!</h1>
+<form action="/pokemon" method="POST">
+
+<h2>Please Enter Trainer Name Below</h2>
+
+  <label for="POST-name">Name:</label>
+  <input id="POST-name" type="text" name="name">
+
+<h2>Please Choose Three Pokemon</h2>
+  <br/>
+ <label for="POST-item1">Pokemon #1:</label>
+  <select id="POST-item1" name="team[0][name]">
+    <option value="charmander">Charmander</option>
+    <option value="eevee">Eevee</option>
+    <option value="squirtle">Squirtle</option>
+    <option value="ghastly">Ghastly</option>
+  </select>
+
+  <label for="POST-item1">Type</label>
+  <input type="radio" id="fire" name="team[0][type]" value="fire">Fire</input>
+  <input type="radio" id="normal" name="team[0][type]" value="normal">Normal</input>
+  <input type="radio" id="ghost"  name="team[0][type]"value="ghost">Ghost</input>
+  <input type="radio" id="water"  name="team[0][type]"value="water">Water</input>
+  <br/>
+
+  <label for="POST-item2">Pokemon #2:</label>
+  <select id="POST-item2" name="team[1][name]">
+    <option value="charmander">Charmander</option>
+    <option value="eevee">Eevee</option>
+    <option value="squirtle">Squirtle</option>
+    <option value="ghastly">Ghastly</option>
+  </select>
+
+  <label for="POST-item2">Type</label>
+  <input type="radio" id="fire" name="team[1][type]" value="fire">Fire</input>
+  <input type="radio" id="normal" name="team[1][type]" value="normal">Normal</input>
+  <input type="radio" id="ghost"  name="team[1][type]"value="ghost">Ghost</input>
+  <input type="radio" id="water"  name="team[1][type]"value="water">Water</input>
+  <br/>
+
+
+  <label for="POST-item3">Pokemon #3:</label>
+  <select id="POST-item3" name="team[2][name]">
+    <option value="charmander">Charmander</option>
+    <option value="eevee">Eevee</option>
+    <option value="squirtle">Squirtle</option>
+    <option value="ghastly">Ghastly</option>
+  </select>
+
+  <label for="POST-item3">Type</label>
+  <input type="radio" id="fire" name="team[2][type]" value="fire">Fire</input>
+  <input type="radio" id="normal" name="team[2][type]" value="normal">Normal</input>
+  <input type="radio" id="ghost"  name="team[2][type]"value="ghost">Ghost</input>
+  <input type="radio" id="water"  name="team[2][type]"value="water">Water</input>
+  <br/>
+  <br/>
+<label for="POST-item-badge">Badge Type</label>
+  <input type="radio" id="water" name="badges[0]" value="water">Water</input>
+  <input type="radio" id="electricity" name="badges[0]" value="electricity">Electricity</input>
+  <br/>
+
+<label for="POST-item-badge2">Badge Type</label>
+  <input type="radio" id="water" name="badges[1]" value="water">Water</input>
+  <input type="radio" id="electricity" name="badges[1]" value="electricity">Electricity</input>
+  <br/>
+
+  <br/>
+  <button type="submit" value="Submit">Submit!</button>
+</form>
